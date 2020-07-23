@@ -31,7 +31,7 @@ function nearest_scripts_styles()
     wp_enqueue_style('nearest_style', get_stylesheet_uri());
     
     // Google Font
-    wp_enqueue_style('nearest_google_fonts', "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap");
+    wp_enqueue_style('nearest_google_fonts', "https://fonts.googleapis.com/css?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap");
 
     // Font Awesome
     wp_enqueue_style('nearest_font_awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css');

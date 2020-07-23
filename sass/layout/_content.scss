@@ -10,3 +10,56 @@
     white-space: nowrap;
     /* added line */
 }
+
+body {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.home {
+    #primary {
+        text-align: center;
+
+        // Header-section
+        .home-detail {
+            background-size: contain;
+            color: $text-color_white;
+            padding: 1rem;
+
+            .section-content {
+                h2 {
+                    font-style: italic;
+                    font-size: 2.25rem;
+                }
+
+                .header-sub-content {
+                    max-width: 280px;
+                    margin: 0 auto;
+
+                    .wp-block-group.store-logos {
+                        padding-top: 2rem;
+                        padding-bottom: 3rem;
+
+                        .wp-block-group__inner-container {
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            grid-gap: 1rem;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+        }
+
+        // Why Nearest Section
+        .feature-section {
+            .section-title {}
+
+            .features>.wp-block-group__inner-container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 1rem;
+            }
+        }
+    }
+}
