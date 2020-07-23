@@ -1,6 +1,6 @@
 /*
 Theme Name: Nearest
-Author: Tean SixPointOne
+Author: Team SixPointOne
 Author URI: http://nearest.wmdd.ca/
 Description: Final Project theme.
 Version: 1.0
@@ -359,18 +359,75 @@ template {
 
 /* Media Queries */
 /* Typography */
+body {
+  font-family: "Open Sans", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+h2 {
+  letter-spacing: 0.05rem;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 1.1rem;
+  letter-spacing: 0.05rem;
+}
+
 /* Media */
 img {
   max-width: 100%;
   height: auto;
 }
 
+figure.wp-block-image {
+  margin: 0;
+}
+
 /* Navigation */
 a {
   text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-navigation .primary-menu .header-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.site-navigation .primary-menu .header-menu li {
+  text-transform: uppercase;
+}
+
+.site-navigation .primary-menu .header-menu li a {
+  padding: 0.5rem 1rem;
+}
+
+.site-navigation .primary-menu .header-menu li:last-of-type a {
+  padding-right: 0;
 }
 
 /* Layout */
+.site-header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 80px auto;
+      grid-template-columns: 80px auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1rem;
+}
+
 /* Visually Hidden */
 .visually-hidden {
   position: absolute !important;
@@ -382,5 +439,54 @@ a {
   clip: rect(1px, 1px, 1px, 1px);
   white-space: nowrap;
   /* added line */
+}
+
+body {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.home #primary {
+  text-align: center;
+}
+
+.home #primary .home-detail {
+  background-size: contain;
+  color: white;
+  padding: 1rem;
+}
+
+.home #primary .home-detail .section-content h2 {
+  font-style: italic;
+  font-size: 2.25rem;
+}
+
+.home #primary .home-detail .section-content .header-sub-content {
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.home #primary .home-detail .section-content .header-sub-content .wp-block-group.store-logos {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.home #primary .home-detail .section-content .header-sub-content .wp-block-group.store-logos .wp-block-group__inner-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home #primary .feature-section .features > .wp-block-group__inner-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

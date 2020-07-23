@@ -1,0 +1,27 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-navigation {
+    .primary-menu {
+        .header-menu {
+            display: flex;
+    
+            li {
+                text-transform: uppercase;
+
+                a {
+                    padding: 0.5rem 1rem;
+                }
+
+                &:last-of-type {
+                    a {
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}

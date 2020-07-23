@@ -29,9 +29,10 @@
         <div class="site-navigation">
             <?php
             wp_nav_menu(array(
-                'theme_location'   =>  'menu-primary',
-                'container'        =>  'nav',
-                'container_class'  =>  'primary-menu',
+                'theme_location'    =>  'menu-primary',
+                'container'         =>  'nav',
+                'container_class'   =>  'primary-menu',
+                'menu_class'        =>  'header-menu'
             ));
             ?>
         </div>
