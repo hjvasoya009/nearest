@@ -19,5 +19,3 @@
     }
     ?>
 </section>
-
-<!-- linear-gradient(to right bottom, #f16f3b73, #732a1085), url(../img/goal.jpg) #6cb0ab, #536293) -->
