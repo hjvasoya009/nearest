@@ -7,7 +7,7 @@
     <?php
     $themeInfo = wp_get_theme();
     ?>
-    <small>Proudly powered by <a href="https://wordpress.org/">WordPress</a>. | Theme: <?= $themeInfo->get('Theme Name') ?> v<?= $themeInfo->get('Version') ?> developed by <a href="<?= $themeInfo->get('Author URI') ?>"><?= $themeInfo->get('Author') ?></a>. </small>
+    <span>developed by <a href="<?= $themeInfo->get('Author URI') ?>" class="theme-author"><?= $themeInfo->get('Author') ?></a>. </span>
 </footer>
 <?php wp_footer(); ?>
 </body>

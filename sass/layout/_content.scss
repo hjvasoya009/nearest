@@ -11,22 +11,61 @@
     /* added line */
 }
 
-body {
-    max-width: 1500px;
-    margin: 0 auto;
-}
-
 .home {
     #primary {
-        text-align: center;
+        // text-align: center;
 
-        // Header-section
-        .home-detail {
-            background-size: contain;
-            color: $text-color_white;
-            padding: 1rem;
+        .section-content {
+            margin-bottom: 5rem;
 
-            .section-content {
+            &:not(:first-of-type) {
+                max-width: 1500px;
+                margin: 0 auto;
+                margin-bottom: 5rem;
+            }
+
+            // into-section
+            &.home-detail {
+                background-size: contain;
+                color: $text-color_white;
+                padding: 1rem;
+                border-bottom-right-radius: 85%;
+
+                .intro-section {
+                    max-width: 1500px;
+                    margin: 0 auto;
+
+                    >.wp-block-group__inner-container {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        grid-gap: 1rem;
+                        align-items: center;
+
+                        .call-to-action {
+
+                            h2 {
+                                color: $text-color_white;
+                                font-size: 3rem;
+                            }
+
+                            .download-store>.wp-block-group__inner-container {
+                                display: grid;
+                                grid-template-columns: 1fr 1fr;
+                                grid-gap: 1rem;
+                            }
+
+                        }
+
+                        .into-img {
+                            text-align: center;
+
+                            img {
+                                max-width: 60%;
+                            }
+                        }
+                    }
+                }
+
                 h2 {
                     font-style: italic;
                     font-size: 2.25rem;
@@ -49,17 +88,65 @@ body {
                     }
                 }
             }
-        }
 
-        // Why Nearest Section
-        .feature-section {
-            .section-title {}
+            // About Scetion
+            .about-section {
+                >.wp-block-group__inner-container {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-gap: 1rem;
+                }
+            }
 
-            .features>.wp-block-group__inner-container {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                grid-gap: 1rem;
+            // Why Nearest Section
+            .why-section {
+                text-align: center;
+
+                .nearest-features {
+                    >.wp-block-group__inner-container {
+                        display: grid;
+                        grid-template-columns: repeat(4, 1fr);
+                        grid-gap: 1rem;
+                    }
+
+                }
+            }
+
+            // Download Section
+            .download-section {
+                text-align: center;
+
+                .download-now-stores {
+                    max-width: 500px;
+                    margin: 0 auto;
+
+                    >.wp-block-group__inner-container {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        grid-gap: 1rem;
+                    }
+                }
+            }
+
+            // Testimonial Section
+            .testimonial-section {
+                text-align: center;
+            }
+
+            // Our Team
+            .team-section {
+                text-align: center;
+
+                .team-members {
+                    >.wp-block-group__inner-container {
+                        display: grid;
+                        grid-template-columns: repeat(6, 1fr);
+                        grid-gap: 1rem;
+                    }
+                }
             }
         }
+
+
     }
 }
