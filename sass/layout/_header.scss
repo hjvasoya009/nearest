@@ -1,4 +1,7 @@
 .site-header {
+    max-width: 1500px;
+    margin: 0 auto;
+
     display: grid;
     grid-template-columns: 80px auto;
     justify-content: space-between;
