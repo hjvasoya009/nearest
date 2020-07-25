@@ -409,6 +409,7 @@ ul {
 
 .site-navigation .primary-menu .header-menu li a {
   padding: 0.5rem 1rem;
+  color: white;
 }
 
 .site-navigation .primary-menu .header-menu li:last-of-type a {
@@ -430,6 +431,10 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 1rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 
 /* Visually Hidden */
@@ -460,6 +465,7 @@ ul {
   color: white;
   padding: 1rem;
   border-bottom-right-radius: 85%;
+  padding-top: 5rem;
 }
 
 .home #primary .section-content.home-detail .intro-section {
