@@ -5,6 +5,7 @@ ul {
 }
 
 .site-navigation {
+    margin-top: 1rem;
     .primary-menu {
         .header-menu {
             display: flex;
@@ -24,5 +25,11 @@ ul {
                 }
             }
         }
+    }
+}
+
+.home {
+    .site-navigation {
+        margin-top: 0;
     }
 }

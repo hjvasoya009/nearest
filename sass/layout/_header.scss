@@ -1,13 +1,25 @@
-.site-header {
-    max-width: 1500px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 80px auto;
-    justify-content: space-between;
-    align-items: center;
+.site-header-wrapper {
     padding: 0 1rem;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
+    background: linear-gradient(180deg, #6cb0ab, #536293);
+
+    .site-header {
+        max-width: 1500px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 80px auto;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 1rem;
+    }
+}
+
+.home {
+    .site-header {
+        background: transparent;
+        padding-bottom: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
 }
