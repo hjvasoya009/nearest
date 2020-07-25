@@ -9,32 +9,34 @@
 </head>
 
 <body <?php body_class(); ?>>
-    <header class="site-header">
-        <div class="site-branding">
+    <header class="site-header-wrapper">
+        <div class="site-header">
+            <div class="site-branding">
 
-            <?php the_custom_logo(); ?>
+                <?php the_custom_logo(); ?>
 
-            <h1 class="site-title">
-                <a href="<?php home_url('/'); ?>">
-                    <?php bloginfo('name'); ?>
-                </a>
-            </h1>
+                <h1 class="site-title">
+                    <a href="<?php home_url('/'); ?>">
+                        <?php bloginfo('name'); ?>
+                    </a>
+                </h1>
 
-            <div class="site-description">
-                <?php bloginfo('description'); ?>
+                <div class="site-description">
+                    <?php bloginfo('description'); ?>
+                </div>
+
+            </div> <!-- .site-branding -->
+
+            <div class="site-navigation">
+                <?php
+                wp_nav_menu(array(
+                    'theme_location'    =>  'menu-primary',
+                    'container'         =>  'nav',
+                    'container_class'   =>  'primary-menu',
+                    'menu_class'        =>  'header-menu'
+                ));
+                ?>
             </div>
-
-        </div> <!-- .site-branding -->
-
-        <div class="site-navigation">
-            <?php
-            wp_nav_menu(array(
-                'theme_location'    =>  'menu-primary',
-                'container'         =>  'nav',
-                'container_class'   =>  'primary-menu',
-                'menu_class'        =>  'header-menu'
-            ));
-            ?>
         </div>
     </header>
     <div id="primary" class="content-area">
