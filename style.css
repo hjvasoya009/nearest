@@ -657,4 +657,208 @@ ul {
 .site-footer span .theme-author {
   font-weight: bold;
 }
+
+.post-type-archive-team_member h1 {
+  color: #586c93;
+  font-size: 2.5rem;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.post-type-archive-team_member img {
+  display: block;
+}
+
+.post-type-archive-team_member main {
+  display: -ms-grid;
+  display: grid;
+}
+
+.post-type-archive-team_member article {
+  margin: 1rem;
+  color: white;
+}
+
+.post-type-archive-team_member article .post-thumbnail {
+  background-color: white;
+  padding: 0;
+}
+
+.post-type-archive-team_member article .team-meta-data {
+  margin-top: -1.5rem;
+  color: white;
+  background-color: #7cbcb9;
+  padding: 1rem;
+  -webkit-clip-path: polygon(100% 5%, 100% 100%, 0 100%, 0 5%, 23% 5%, 31% 0, 39% 5%);
+          clip-path: polygon(100% 5%, 100% 100%, 0 100%, 0 5%, 23% 5%, 31% 0, 39% 5%);
+}
+
+.post-type-archive-team_member article .team-meta-data h2 {
+  font-size: 1rem;
+  color: white;
+}
+
+.post-type-archive-team_member article .team-meta-data .team-member-postion {
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+.post-type-archive-team_member article .team-meta-data .team-member-description p {
+  font-size: 0.8rem;
+}
+
+.post-type-archive-team_member article .team-meta-data .team-member-description i {
+  margin-top: 1rem;
+  display: inline-block;
+  border: solid 1px white;
+  border-radius: 50%;
+  color: white;
+  padding: 0.4rem;
+}
+
+.post-type-archive-team_member article .team-meta-data .team-member-description a {
+  margin: 0.3rem;
+}
+
+.post-type-archive-team_member article .team-meta-data .team-member-description a:first-of-type {
+  margin-left: 0;
+}
+
+.post-type-archive-team_member .type-team_member:nth-of-type(5) {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.post-type-archive-team_member .type-team_member:nth-of-type(6) {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.post-type-archive-team_member .type-team_member:nth-of-type(3) {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.post-type-archive-team_member .type-team_member:nth-of-type(3) .team-meta-data {
+  background-color: #6194a3;
+}
+
+.post-type-archive-team_member .type-team_member:nth-of-type(1) {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+}
+
+.post-type-archive-team_member .type-team_member:nth-of-type(1) .team-meta-data {
+  background-color: #6194a3;
+}
+
+.post-type-archive-team_member .type-team_member:nth-of-type(4) {
+  -webkit-box-ordinal-group: 6;
+      -ms-flex-order: 5;
+          order: 5;
+}
+
+.post-type-archive-team_member .type-team_member:nth-of-type(2) {
+  -webkit-box-ordinal-group: 7;
+      -ms-flex-order: 6;
+          order: 6;
+}
+
+@media screen and (min-width: 550px) {
+  .post-type-archive-team_member article {
+    margin: 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .post-type-archive-team_member article .post-thumbnail img {
+    height: 100%;
+  }
+  .post-type-archive-team_member article .team-meta-data {
+    margin-top: 0;
+  }
+  .post-type-archive-team_member .type-team_member:nth-of-type(6) .post-thumbnail,
+  .post-type-archive-team_member .type-team_member:nth-of-type(1) .post-thumbnail,
+  .post-type-archive-team_member .type-team_member:nth-of-type(2) .post-thumbnail {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .post-type-archive-team_member .type-team_member:nth-of-type(6) .team-meta-data,
+  .post-type-archive-team_member .type-team_member:nth-of-type(1) .team-meta-data,
+  .post-type-archive-team_member .type-team_member:nth-of-type(2) .team-meta-data {
+    -webkit-clip-path: polygon(0 0, 95% 0%, 95% 80%, 100% 72%, 95% 64%, 95% 100%, 0 100%);
+            clip-path: polygon(0 0, 95% 0%, 95% 80%, 100% 72%, 95% 64%, 95% 100%, 0 100%);
+    margin-right: -1.25rem;
+    padding-right: 2rem;
+  }
+  .post-type-archive-team_member .type-team_member:nth-of-type(3) .team-meta-data,
+  .post-type-archive-team_member .type-team_member:nth-of-type(4) .team-meta-data,
+  .post-type-archive-team_member .type-team_member:nth-of-type(5) .team-meta-data {
+    -webkit-clip-path: polygon(100% 100%, 5% 100%, 5% 80%, 0 72%, 5% 64%, 5% 0, 100% 0%);
+            clip-path: polygon(100% 100%, 5% 100%, 5% 80%, 0 72%, 5% 64%, 5% 0, 100% 0%);
+    margin-left: -1.25rem;
+    padding-left: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .post-type-archive-team_member #primary {
+    margin: 0 auto;
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .post-type-archive-team_member #primary {
+    margin: 0;
+    max-width: 100%;
+  }
+  .post-type-archive-team_member #main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .post-type-archive-team_member h1 {
+    grid-column: 1 / -1;
+  }
+  .post-type-archive-team_member .type-team_member:nth-of-type(3) .post-thumbnail {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .post-type-archive-team_member .type-team_member:nth-of-type(3) .team-meta-data {
+    -webkit-clip-path: polygon(0 0, 95% 0%, 95% 80%, 100% 72%, 95% 64%, 95% 100%, 0 100%);
+            clip-path: polygon(0 0, 95% 0%, 95% 80%, 100% 72%, 95% 64%, 95% 100%, 0 100%);
+    margin-right: -1.25rem;
+    padding-right: 2.25rem;
+    margin-left: 0;
+    padding-left: 1rem;
+  }
+  .post-type-archive-team_member .type-team_member:nth-of-type(6) .team-meta-data,
+  .post-type-archive-team_member .type-team_member:nth-of-type(2) .team-meta-data {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    -webkit-clip-path: polygon(100% 100%, 5% 100%, 5% 80%, 0 72%, 5% 64%, 5% 0, 100% 0%);
+            clip-path: polygon(100% 100%, 5% 100%, 5% 80%, 0 72%, 5% 64%, 5% 0, 100% 0%);
+    margin-left: -1.25rem;
+    padding-left: 2.25rem;
+    margin-right: 0;
+    padding-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .post-type-archive-team_member #primary {
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+}
 /*# sourceMappingURL=style.css.map */
