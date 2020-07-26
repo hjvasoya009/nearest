@@ -385,6 +385,48 @@ figure.wp-block-image {
   margin: 0;
 }
 
+.wpsisac-slick-carousal-wrp {
+  margin: 10rem 0;
+  max-height: 500px !important;
+}
+
+.wpsisac-slick-carousal-wrp div {
+  max-height: 500px !important;
+}
+
+.wpsisac-slick-carousal .slick-dots {
+  margin-top: 5rem !important;
+}
+
+.wpsisac-slick-carousal-wrp img {
+  max-height: 500px !important;
+}
+
+.wpsisac-slick-carousal .slick-dots li button {
+  background: #6cb0ab !important;
+  opacity: 0.4;
+  border: none;
+}
+
+.wpsisac-slick-carousal .slick-dots li.slick-active button {
+  background: #6cb0ab !important;
+  opacity: 1;
+}
+
+.wpsisac-slick-carousal .wpsisac-image-slide {
+  margin: 0 2rem;
+}
+
+@media screen and (max-width: 641px) {
+  .wpsisac-slick-carousal-wrp {
+    padding: 0 1rem;
+  }
+  .wpsisac-slick-carousal-wrp img {
+    height: 100% !important;
+    width: auto !important;
+  }
+}
+
 /* Navigation */
 a {
   text-decoration: none;

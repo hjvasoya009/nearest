@@ -5,7 +5,7 @@ wp_reset_query();  // Restore global post data
 
 $args = array(
     'post_type'         =>  'page',
-    'posts_per_page'    =>  '6',
+    'posts_per_page'    =>  '7',
     'orderby'           =>  'menu_order',
     'order'             =>  'ASC'
 );
