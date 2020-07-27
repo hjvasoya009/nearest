@@ -6,17 +6,20 @@ ul {
 
 .site-navigation {
     margin-top: 1rem;
+
     .primary-menu {
         .header-menu {
             display: flex;
             flex-wrap: wrap;
-    
+
             li {
                 text-transform: uppercase;
 
                 a {
                     padding: 0.5rem 1rem;
                     color: $text-color_white;
+                    letter-spacing: 0.1rem;
+                    display: block;
                 }
 
                 &:last-of-type {
@@ -24,6 +27,26 @@ ul {
                         padding-right: 0;
                     }
                 }
+            }
+        }
+    }
+}
+
+.footer-menu-nav {
+    padding: 2rem 1rem;
+    .footer-menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        li {
+            text-transform: uppercase;
+
+            a {
+                padding: 0.5rem 1rem;
+                color: $text-color_white;
+                letter-spacing: 0.1rem;
+                display: block;
             }
         }
     }
