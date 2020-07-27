@@ -893,7 +893,8 @@ ul {
 }
 
 .page-id-254 .wp-block-group__inner-container .sponsor-meta-text .wp-block-group__inner-container p {
-  font-size: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.8;
 }
 
 .page-id-254 .wp-block-group__inner-container .sponsor-meta-text .wp-block-group__inner-container p:first-of-type {
