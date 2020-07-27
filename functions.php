@@ -35,6 +35,12 @@ function nearest_scripts_styles()
 
     // Font Awesome
     wp_enqueue_style('nearest_font_awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css');
+
+    // enqueue jQuery
+   wp_enqueue_script('nearest_jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js');
+   
+   // enqueue JS
+   wp_enqueue_script('nearest_main_js', get_template_directory_uri() . '/js/main.js', array(), null, true);
 }
 
 add_action('wp_enqueue_scripts', 'nearest_scripts_styles');
