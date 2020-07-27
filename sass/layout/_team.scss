@@ -1,0 +1,223 @@
+.post-type-archive-team_member {
+  h1 {
+    color: $text_color-heading;
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  img {
+    display: block;
+  }
+  main {
+    display: grid;
+  }
+
+  article {
+    margin: 1rem;
+    color: white;
+    // position: relative;
+
+    .post-thumbnail {
+      background-color: white;
+      padding: 0;
+    }
+
+    .team-meta-data {
+      margin-top: -1.5rem;
+      color: white;
+      background-color: #7cbcb9;
+      padding: 1rem;
+      clip-path: polygon(
+        100% 5%,
+        100% 100%,
+        0 100%,
+        0 5%,
+        23% 5%,
+        31% 0,
+        39% 5%
+      );
+
+      h2 {
+        font-size: 1rem;
+        color: white;
+      }
+      .team-member-postion {
+        font-style: italic;
+
+        font-size: 0.8rem;
+      }
+
+      .team-member-description {
+        p {
+          font-size: 0.8rem;
+        }
+        i {
+          margin-top: 1rem;
+          display: inline-block;
+          border: solid 1px white;
+          border-radius: 50%;
+          color: white;
+          padding: 0.4rem;
+        }
+        a {
+          margin: 0.3rem;
+        }
+        a:first-of-type {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  .type-team_member:nth-of-type(5) {
+    order: 1;
+  }
+
+  .type-team_member:nth-of-type(6) {
+    order: 2;
+  }
+
+  .type-team_member:nth-of-type(3) {
+    order: 3;
+    .team-meta-data {
+      background-color: #6194a3;
+    }
+  }
+  .type-team_member:nth-of-type(1) {
+    order: 4;
+    .team-meta-data {
+      background-color: #6194a3;
+    }
+  }
+
+  .type-team_member:nth-of-type(4) {
+    order: 5;
+  }
+
+  .type-team_member:nth-of-type(2) {
+    order: 6;
+  }
+
+  @include mq-small() {
+    article {
+      margin: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      .post-thumbnail {
+        img {
+          height: 100%;
+        }
+      }
+
+      .team-meta-data {
+        margin-top: 0;
+      }
+    }
+    .type-team_member:nth-of-type(6),
+    .type-team_member:nth-of-type(1),
+    .type-team_member:nth-of-type(2) {
+      .post-thumbnail {
+        order: 2;
+      }
+      .team-meta-data {
+        clip-path: polygon(
+          0 0,
+          95% 0%,
+          95% 80%,
+          100% 72%,
+          95% 64%,
+          95% 100%,
+          0 100%
+        );
+        margin-right: -1.25rem;
+        padding-right: 2rem;
+      }
+    }
+    .type-team_member:nth-of-type(3),
+    .type-team_member:nth-of-type(4),
+    .type-team_member:nth-of-type(5) {
+      .team-meta-data {
+        clip-path: polygon(
+          100% 100%,
+          5% 100%,
+          5% 80%,
+          0 72%,
+          5% 64%,
+          5% 0,
+          100% 0%
+        );
+        margin-left: -1.25rem;
+        padding-left: 2rem;
+      }
+    }
+  }
+
+  @include mq-medium() {
+    #primary {
+      margin: 0 auto;
+      max-width: 768px;
+    }
+  }
+
+  @include mq-mediumLarge() {
+    #primary {
+      margin: 0;
+      max-width: 100%;
+    }
+    #main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    h1 {
+      grid-column: 1 / -1;
+    }
+    .type-team_member:nth-of-type(3) {
+      .post-thumbnail {
+        order: 2;
+      }
+      .team-meta-data {
+        clip-path: polygon(
+          0 0,
+          95% 0%,
+          95% 80%,
+          100% 72%,
+          95% 64%,
+          95% 100%,
+          0 100%
+        );
+        margin-right: -1.25rem;
+        padding-right: 2.25rem;
+        margin-left: 0;
+        padding-left: 1rem;
+      }
+    }
+    .type-team_member:nth-of-type(6),
+    .type-team_member:nth-of-type(2) {
+      .team-meta-data {
+        order: 2;
+        clip-path: polygon(
+          100% 100%,
+          5% 100%,
+          5% 80%,
+          0 72%,
+          5% 64%,
+          5% 0,
+          100% 0%
+        );
+        margin-left: -1.25rem;
+        padding-left: 2.25rem;
+        margin-right: 0;
+        padding-right: 1rem;
+      }
+    }
+  }
+
+  @include mq-exLarge() {
+    #primary {
+      max-width: 1500px;
+      margin: 0 auto;
+    }
+  }
+}
