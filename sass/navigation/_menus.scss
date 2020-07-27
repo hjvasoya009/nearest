@@ -9,6 +9,7 @@ ul {
     .primary-menu {
         .header-menu {
             display: flex;
+            flex-wrap: wrap;
     
             li {
                 text-transform: uppercase;
