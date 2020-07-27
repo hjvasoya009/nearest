@@ -13,7 +13,7 @@
 
 .home {
     #primary {
-        // text-align: center;
+        text-align: center;
 
         .section-content {
             margin-bottom: 5rem;
@@ -29,24 +29,38 @@
                 background-size: contain;
                 color: $text-color_white;
                 padding: 1rem;
-                border-bottom-right-radius: 85%;
-                padding-top: 9rem;
+                // border-bottom-right-radius: 85%;
+                padding-top: 7rem;
+
+                @include mq-medium {
+                    padding-top: 9rem;
+                }
 
                 .intro-section {
                     max-width: 1500px;
                     margin: 0 auto;
 
                     >.wp-block-group__inner-container {
-                        display: grid;
-                        grid-template-columns: 1fr 1fr;
-                        grid-gap: 1rem;
-                        align-items: center;
+
+                        @include mq-medium {
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            grid-gap: 1rem;
+                            align-items: center;
+                        }
 
                         .call-to-action {
 
+                            max-width: 500px;
+                            margin: 0 auto;
+
                             h2 {
                                 color: $text-color_white;
-                                font-size: 3rem;
+                                font-size: 2rem;
+
+                                @include mq-medium {
+                                    font-size: 3rem;
+                                }
                             }
 
                             .download-store>.wp-block-group__inner-container {
@@ -61,7 +75,7 @@
                             text-align: center;
 
                             img {
-                                max-width: 60%;
+                                max-width: 55%;
                             }
                         }
                     }
@@ -93,29 +107,41 @@
             // About Scetion
             .about-section {
                 >.wp-block-group__inner-container {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-                    grid-gap: 1rem;
+                    @include mq-medium {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        grid-gap: 1rem;
+                    }
+                     .about-content {
+                        >.wp-block-group__inner-container {
+                            padding: 0 1rem;
+                        }
+                     }
                 }
             }
 
             // Why Nearest Section
             .why-section {
                 text-align: center;
+                padding: 0 1rem;
 
                 .nearest-features {
                     >.wp-block-group__inner-container {
                         display: grid;
-                        grid-template-columns: repeat(4, 1fr);
+                        grid-template-columns: repeat(2, 1fr);
                         grid-gap: 1rem;
-                    }
 
+                        @include mq-medium {
+                            grid-template-columns: repeat(4, 1fr);
+                        }
+                    }
                 }
             }
 
             // Download Section
             .download-section {
                 text-align: center;
+                padding: 0 1rem;
 
                 .download-now-stores {
                     max-width: 500px;
@@ -132,22 +158,29 @@
             // Testimonial Section
             .testimonial-section {
                 text-align: center;
+                padding: 0 1rem;
             }
 
             // Our Team
             .team-section {
                 text-align: center;
+                padding: 0 1rem;
 
                 .team-members {
                     >.wp-block-group__inner-container {
                         display: grid;
-                        grid-template-columns: repeat(6, 1fr);
+                        grid-template-columns: repeat(2, 1fr);
                         grid-gap: 1rem;
+                        @include mq-medium {
+                            grid-template-columns: repeat(3, 1fr);
+                        }
+
+                        @include mq-mediumLarge {
+                            grid-template-columns: repeat(6, 1fr);
+                        }
                     }
                 }
             }
         }
-
-
     }
 }
