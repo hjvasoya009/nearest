@@ -1294,4 +1294,125 @@ ul {
     margin: 0 auto;
   }
 }
+
+.contact-form {
+  margin: auto 2rem;
+  padding-top: 5rem;
+}
+
+.contact-form #nf-field-1, .contact-form #nf-field-2, .contact-form #nf-field-3 {
+  border-radius: .5rem;
+  border: 1px solid #67a5a9;
+  background-color: white;
+}
+
+.contact-form #nf-label-field-1, .contact-form #nf-label-field-2, .contact-form #nf-label-field-3 {
+  font-family: "Open Sans", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: normal;
+}
+
+.contact-form .nf-form-title, .contact-form .nf-form-fields-required, .contact-form .ninja-forms-req-symbol {
+  display: none;
+}
+
+.contact-form #nf-field-4 {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#6cb0ab), to(#536293));
+  background: linear-gradient(180deg, #6cb0ab, #536293);
+  border-radius: .5rem;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 550px) {
+  .contact-form #nf-field-4 {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact-form #nf-field-4 {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 4rem;
+  }
+}
+
+.contact-form .nf-field-element {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-form {
+    margin: 0 5rem;
+  }
+}
+
+.contact-intro {
+  background: -webkit-gradient(linear, left top, left bottom, from(#6cb0ab), to(#536293));
+  background: linear-gradient(180deg, #6cb0ab, #536293);
+  padding: 3rem 2rem;
+  border-bottom-right-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 3px #4b578d;
+}
+
+@media screen and (min-width: 550px) {
+  .contact-intro {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact-intro {
+    padding: 5rem;
+  }
+}
+
+.contact-heading {
+  color: white;
+  color: white;
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: .1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-heading {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contact-heading {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
+
+.contact-para {
+  letter-spacing: .1rem;
+  font-size: 1.2rem;
+  line-height: 1.9rem;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-para {
+    font-size: 1.7rem;
+    line-height: 2.9rem;
+    padding-top: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contact-para {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
 /*# sourceMappingURL=style.css.map */

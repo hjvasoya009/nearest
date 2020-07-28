@@ -1,0 +1,105 @@
+.contact-form {
+    margin: auto 2rem;
+    padding-top: 5rem;
+
+    #nf-field-1, #nf-field-2, #nf-field-3 {
+        border-radius: .5rem;
+        border: 1px solid #67a5a9;
+        background-color: $text-color_white;
+    }
+    
+    #nf-label-field-1, #nf-label-field-2, #nf-label-field-3 {
+        font-family: $font-sans-serif;
+        font-weight: normal;
+    }
+    
+    .nf-form-title, .nf-form-fields-required, .ninja-forms-req-symbol {
+        display: none;
+    }
+    
+    #nf-field-4 {
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: .1rem;
+        background: linear-gradient(180deg, #6cb0ab, #536293);
+        border-radius: .5rem;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+
+        @include mq-small {
+            margin-top: 2rem;
+        }
+
+        @include mq-medium {
+        max-width: 400px;
+        margin: 0 auto;
+        margin-top: 4rem;
+        }
+    }
+
+    .nf-field-element {
+        text-align: center;
+    }
+
+    @include mq-medium {
+        margin: 0 5rem;
+    }
+
+}
+
+.contact-intro {
+    background: linear-gradient(180deg, #6cb0ab, #536293);
+    padding: 3rem 2rem;
+    border-bottom-right-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+    text-align: center;
+    color: $text-color_white;
+    text-shadow: 2px 2px 3px #4b578d;
+
+    @include mq-small {
+        text-align: left;
+    }
+
+    @include mq-medium {
+        padding: 5rem;
+    }
+}
+
+.contact-heading {
+    color: $text-color_white;
+    color: white;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: .1rem;
+
+    @include mq-medium {
+        font-size: 3.5rem;
+    }
+
+    @include mq-mediumLarge {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}
+
+.contact-para {
+    letter-spacing: .1rem;
+    font-size: 1.2rem;
+    line-height: 1.9rem;
+
+    @include mq-medium {
+        font-size: 1.7rem;
+        line-height: 2.9rem;
+        padding-top: 2rem;
+    }
+
+    @include mq-mediumLarge {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}
+
+
+
+
