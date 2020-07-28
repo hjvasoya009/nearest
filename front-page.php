@@ -1,8 +1,6 @@
 <?php
 get_header();
 
-wp_reset_query();  // Restore global post data
-
 $args = array(
     'post_type'         =>  'page',
     'posts_per_page'    =>  '7',
@@ -22,5 +20,6 @@ if ($my_query->have_posts()) {
     get_template_part('template-parts/content-none');
 }
 
+wp_reset_query();  // Restore global post data
 
 get_footer();
