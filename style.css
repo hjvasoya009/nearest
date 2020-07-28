@@ -801,6 +801,22 @@ ul {
   padding: 0 1rem;
 }
 
+.home #primary .section-content .testimonial-section .user-testimonials > .wp-block-group__inner-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+
+.home #primary .section-content .testimonial-section .user-testimonials > .wp-block-group__inner-container .testimonial-detail {
+  background-color: #fff;
+}
+
+.home #primary .section-content .testimonial-section .user-testimonials > .wp-block-group__inner-container .testimonial-item img {
+  border-radius: 50%;
+}
+
 .home #primary .section-content .team-section {
   text-align: center;
   padding: 0 1rem;
