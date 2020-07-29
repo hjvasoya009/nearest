@@ -4,7 +4,7 @@ get_header();
 
 if (is_post_type_archive('team_member')) {
 ?>
-    <h1>Team Nearest</h1>
+    <h2>Team Nearest</h2>
 <?php
 }
 if (have_posts()) :

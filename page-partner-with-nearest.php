@@ -2,22 +2,24 @@
 
 get_header();
 
-?><h1>Partner with Nearest</h1><?php
+?>
+<h1>Partner with Nearest</h1>
+<?php
 
-                                if (have_posts()) :
+if (have_posts()) :
 
-                                    while (have_posts()) :
-                                        the_post();
-
-
-                                        get_template_part('template-parts/content');
+    while (have_posts()) :
+        the_post();
 
 
-                                    endwhile;
+        get_template_part('template-parts/content');
 
-                                else :
-                                    get_template_part('template-parts/content-none.php');
 
-                                endif;
+    endwhile;
 
-                                get_footer();
+else :
+    get_template_part('template-parts/content-none.php');
+
+endif;
+
+get_footer();
