@@ -1040,17 +1040,26 @@ ul {
 }
 
 .post-type-archive-team_member article .team-meta-data h2 {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: white;
+  margin-top: 1rem;
+  margin-bottom: 0.7rem;
+  text-align: left;
 }
 
 .post-type-archive-team_member article .team-meta-data .team-member-postion {
   font-style: italic;
-  font-size: 0.8rem;
+  font-size: 1rem;
+}
+
+.post-type-archive-team_member article .team-meta-data .team-member-description {
+  margin-top: 1.5rem;
 }
 
 .post-type-archive-team_member article .team-meta-data .team-member-description p {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.08rem;
+  line-height: 1.5rem;
 }
 
 .post-type-archive-team_member article .team-meta-data .team-member-description i {
