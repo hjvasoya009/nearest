@@ -8,7 +8,15 @@
     <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<?php
+if (is_page( 'Contact' )) {
+    $class = 'contact-page';
+} else {
+    $class = '';
+}
+?>
+
+<body <?php body_class($class); ?>>
     <header class="site-header-wrapper">
         <div class="site-header">
             <div class="site-branding">

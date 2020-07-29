@@ -1,8 +1,8 @@
 .post-type-archive-team_member {
-  h1 {
+  h2 {
     color: $text_color-heading;
     font-size: 2.5rem;
-    margin: 1rem 0;
+    margin: 3rem 0;
     text-align: center;
   }
 
@@ -58,7 +58,8 @@
           border: solid 1px white;
           border-radius: 50%;
           color: white;
-          padding: 0.4rem;
+          padding: 0.5rem;
+          font-size: 1rem;
         }
         a {
           margin: 0.3rem;
@@ -170,7 +171,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
     }
-    h1 {
+    h2 {
       grid-column: 1 / -1;
     }
     .type-team_member:nth-of-type(3) {
