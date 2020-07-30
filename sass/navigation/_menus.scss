@@ -1,59 +1,80 @@
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .site-navigation {
-  margin-top: 1rem;
+    margin-top: 1rem;
 
-  .primary-menu {
-      .header-menu {
-          display: flex;
-          flex-wrap: wrap;
+    .primary-menu {
+        .header-menu {
+            display: flex;
+            flex-wrap: wrap;
 
-          li {
-              text-transform: uppercase;
+            li {
+                text-transform: uppercase;
 
-              a {
-                  padding: 0.5rem 1rem;
-                  color: $text-color_white;
-                  letter-spacing: 0.1rem;
-                  display: block;
-              }
+                a {
+                    padding: 0.5rem 1rem;
+                    color: $text-color_white;
+                    letter-spacing: 0.1rem;
+                    display: block;
+                    font-weight: 600;
 
-              &:last-of-type {
-                  a {
-                      padding-right: 0;
-                  }
-              }
-          }
-      }
-  }
+                    &:hover {
+                        color: #91eec5;
+                    }
+                }
+
+                &:last-of-type {
+                    a {
+                        padding-right: 0;
+                    }
+                }
+            }
+
+            .current_page_item a,
+            .current-menu-item a {
+                color: #91eec5;
+            }
+        }
+    }
 }
 
 .footer-menu-nav {
-  padding: 2rem 1rem;
-  .footer-menu {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+    padding: 2rem 1rem;
 
-      li {
-          text-transform: uppercase;
+    .footer-menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
 
-          a {
-              padding: 0.5rem 1rem;
-              color: $text-color_white;
-              letter-spacing: 0.1rem;
-              display: block;
-          }
-      }
-  }
+        li {
+            text-transform: uppercase;
+
+            a {
+                padding: 0.5rem 1rem;
+                color: $text-color_white;
+                letter-spacing: 0.1rem;
+                display: block;
+                font-weight: 600;
+
+                &:hover {
+                    color: #536293;
+                }
+            }
+        }
+
+        .current_page_item a,
+        .current-menu-item a {
+            color: #536293;
+        }
+    }
 }
 
 .home {
-  .site-navigation {
-      margin-top: 0;
-  }
+    .site-navigation {
+        margin-top: 0;
+    }
 }

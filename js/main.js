@@ -18,3 +18,7 @@ var rightOutlineHTML = `<div class="curl curl-right">
 </div>`;
 
 $(".about-section").before(rightOutlineHTML);
+
+
+$('.team-section').next('p').remove();
+$('.team-member').next('p').remove();
