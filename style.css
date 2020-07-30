@@ -1514,14 +1514,76 @@ ul {
   max-width: 1500px;
   margin: 0 auto;
   margin-top: 3rem;
+  padding: 0 1rem;
 }
 
-.blog #primary .blog-posts,
-.single #primary .blog-posts {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
+.blog #primary h2.blogpage-pagetitle,
+.single #primary h2.blogpage-pagetitle {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .blog #primary .blog-posts,
+  .single #primary .blog-posts {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3.5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .blog #primary .blog-posts,
+  .single #primary .blog-posts {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .blog #primary .blog-posts,
+  .single #primary .blog-posts {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.blog #primary .blog-posts article,
+.single #primary .blog-posts article {
+  margin-bottom: 3.5rem;
+  border: 1px solid lightgrey;
+  border-radius: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .blog #primary .blog-posts article,
+  .single #primary .blog-posts article {
+    margin-bottom: 0;
+  }
+}
+
+.blog #primary .blog-posts article .article-post-thumbnail img,
+.single #primary .blog-posts article .article-post-thumbnail img {
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+.blog #primary .blog-posts article h2.article-title,
+.single #primary .blog-posts article h2.article-title {
+  border-bottom: 1px solid lightgrey;
+  padding: 1rem;
+  text-align: center;
+  line-height: 1.2rem;
+  margin-top: 0;
+  padding-bottom: 1.5rem;
+}
+
+.blog #primary .blog-posts article h2.article-title a,
+.single #primary .blog-posts article h2.article-title a {
+  color: #3a3a3a;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */

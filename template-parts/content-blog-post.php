@@ -22,10 +22,8 @@
                     <?php the_title(); ?>
                 </a>
             </h2>
-            <div class="article-excerpt">
-                <?php the_excerpt(); ?>
-            </div>
-            <a href="<?php the_permalink(); ?>" class="read-more-btn">Read More</a>
+            
+            <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); echo do_shortcode('[addtoany]'); ?>
 
         <?php
         } else {
