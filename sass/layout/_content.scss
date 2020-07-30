@@ -269,53 +269,69 @@
                 }
             }
 
-             // .screens-section {
-                .swiper-container {
-                    img {
-                        width: 86%;
-                        object-fit: cover;
-                        object-position: center;
-                        box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.25), 0 5px 20px 0 rgba(0, 0, 0, 0.20);
-                    }
-    
-                    .swiper-pagination {
-                        position: unset;
-                        margin-top: 5rem;
-    
-                        .swiper-pagination-bullet {
-                            background: #6cb0ab;
-                            opacity: 0.4;
-                            width: 12px;
-                            height: 12px;
-    
-                            &.swiper-pagination-bullet-active {
-                                opacity: 1;
-                            }
+            // .screens-section {
+            .swiper-container {
+                img {
+                    width: 86%;
+                    object-fit: cover;
+                    object-position: center;
+                    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.25), 0 5px 20px 0 rgba(0, 0, 0, 0.20);
+                }
+
+                .swiper-pagination {
+                    position: unset;
+                    margin-top: 5rem;
+
+                    .swiper-pagination-bullet {
+                        background: #6cb0ab;
+                        opacity: 0.4;
+                        width: 12px;
+                        height: 12px;
+
+                        &.swiper-pagination-bullet-active {
+                            opacity: 1;
                         }
                     }
                 }
-    
-                // }
+            }
+
+            // }
 
             // Testimonial Section
-            .testimonial-section {
+            .testimonial-slider {
                 text-align: center;
                 padding: 0 1rem;
+                padding-top: 3rem;
 
-                .user-testimonials {
-                    >.wp-block-group__inner-container {
-                        display: grid;
-                        grid-template-columns: repeat(2, 1fr);
-                        grid-gap: 1rem;
+                .wppsac-carousel-slides {
+                    padding: 0;
+                    margin: 0 1rem;
 
-                        .testimonial-detail {
-                            background-color: $bg-color_white;
+                    .wppsac-post-image-bg {
+                        position: relative;
+                        top: 30px;
+                        display: inline-block;
+                        margin: 0;
+                        border-radius: 50%;
+                    }
+
+                    .wppsac-post-content-position {
+                        padding-bottom: 1rem;
+                        padding-top: 4rem;
+                        background: rgba(255, 255, 255, 0.8);
+                        border-radius: 1rem;
+
+                        .wppsac-post-title a {
+                            color: #333;
                         }
 
-                        .testimonial-item {
-                            img {
-                                border-radius: 50%;
-                            }
+                        .wppsac-post-content {
+                            padding: 0.7rem 0;
+                            max-width: 400px;
+                            margin: 0 auto;
+                            color: #666;
+                            font-style: italic;
+                            letter-spacing: 0.09rem;
                         }
                     }
                 }
@@ -326,7 +342,6 @@
                 text-align: center;
                 padding: 0 1rem;
                 padding-bottom: 4rem;
-                padding-top: 4rem;
 
                 h2 {
                     color: $text-color_white;
@@ -358,7 +373,7 @@
                                 margin-bottom: 0.5rem;
                                 color: $text-color_white;
                             }
-    
+
                             p {
                                 font-style: italic;
                                 margin: 0;

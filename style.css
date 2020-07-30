@@ -418,10 +418,20 @@ ul {
   color: white;
   letter-spacing: 0.1rem;
   display: block;
+  font-weight: 600;
+}
+
+.site-navigation .primary-menu .header-menu li a:hover {
+  color: #91eec5;
 }
 
 .site-navigation .primary-menu .header-menu li:last-of-type a {
   padding-right: 0;
+}
+
+.site-navigation .primary-menu .header-menu .current_page_item a,
+.site-navigation .primary-menu .header-menu .current-menu-item a {
+  color: #91eec5;
 }
 
 .footer-menu-nav {
@@ -448,6 +458,16 @@ ul {
   color: white;
   letter-spacing: 0.1rem;
   display: block;
+  font-weight: 600;
+}
+
+.footer-menu-nav .footer-menu li a:hover {
+  color: #536293;
+}
+
+.footer-menu-nav .footer-menu .current_page_item a,
+.footer-menu-nav .footer-menu .current-menu-item a {
+  color: #536293;
 }
 
 .home .site-navigation {
@@ -814,32 +834,49 @@ ul {
   opacity: 1;
 }
 
-.home #primary .section-content .testimonial-section {
+.home #primary .section-content .testimonial-slider {
   text-align: center;
   padding: 0 1rem;
+  padding-top: 3rem;
 }
 
-.home #primary .section-content .testimonial-section .user-testimonials > .wp-block-group__inner-container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1rem;
+.home #primary .section-content .testimonial-slider .wppsac-carousel-slides {
+  padding: 0;
+  margin: 0 1rem;
 }
 
-.home #primary .section-content .testimonial-section .user-testimonials > .wp-block-group__inner-container .testimonial-detail {
-  background-color: #fff;
-}
-
-.home #primary .section-content .testimonial-section .user-testimonials > .wp-block-group__inner-container .testimonial-item img {
+.home #primary .section-content .testimonial-slider .wppsac-carousel-slides .wppsac-post-image-bg {
+  position: relative;
+  top: 30px;
+  display: inline-block;
+  margin: 0;
   border-radius: 50%;
+}
+
+.home #primary .section-content .testimonial-slider .wppsac-carousel-slides .wppsac-post-content-position {
+  padding-bottom: 1rem;
+  padding-top: 4rem;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 1rem;
+}
+
+.home #primary .section-content .testimonial-slider .wppsac-carousel-slides .wppsac-post-content-position .wppsac-post-title a {
+  color: #333;
+}
+
+.home #primary .section-content .testimonial-slider .wppsac-carousel-slides .wppsac-post-content-position .wppsac-post-content {
+  padding: 0.7rem 0;
+  max-width: 400px;
+  margin: 0 auto;
+  color: #666;
+  font-style: italic;
+  letter-spacing: 0.09rem;
 }
 
 .home #primary .section-content .team-section {
   text-align: center;
   padding: 0 1rem;
   padding-bottom: 4rem;
-  padding-top: 4rem;
 }
 
 .home #primary .section-content .team-section h2 {
