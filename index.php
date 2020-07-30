@@ -4,7 +4,10 @@ get_header();
 if (have_posts()) {
     if (is_home()) {
 ?>
+  <h2 class="blogpage-pagetitle">Blog Articles</h2>
+  
         <div class="blog-posts">
+          
         <?php
     }
     while (have_posts()) {
