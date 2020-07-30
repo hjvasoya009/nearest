@@ -2,6 +2,11 @@
 get_header();
 
 if (have_posts()) {
+    if (is_home()) {
+?>
+        <div class="blog-posts">
+        <?php
+    }
     while (have_posts()) {
         the_post();
         if (is_home() || is_single()) {
@@ -9,7 +14,11 @@ if (have_posts()) {
         } else {
             get_template_part('template-parts/content');
         }
-        
+    }
+    if (is_home()) {
+        ?>
+        </div>
+<?php
     }
 } else {
     get_template_part('template-parts/content-none.php');

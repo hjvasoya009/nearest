@@ -817,7 +817,6 @@ ul {
 .home #primary .section-content .testimonial-section {
   text-align: center;
   padding: 0 1rem;
-  display: none;
 }
 
 .home #primary .section-content .testimonial-section .user-testimonials > .wp-block-group__inner-container {
@@ -1471,5 +1470,21 @@ ul {
     max-width: 1000px;
     margin: 0 auto;
   }
+}
+
+.blog #primary,
+.single #primary {
+  max-width: 1500px;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+.blog #primary .blog-posts,
+.single #primary .blog-posts {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
 }
 /*# sourceMappingURL=style.css.map */

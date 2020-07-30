@@ -1,0 +1,14 @@
+.blog,
+.single {
+    #primary {
+        max-width: 1500px;
+        margin: 0 auto;
+        margin-top: 3rem;
+    
+        .blog-posts {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 2rem;
+        }
+    }
+}
