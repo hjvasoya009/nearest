@@ -398,6 +398,10 @@ ul {
   padding: 0;
 }
 
+ul li a {
+  letter-spacing: 1px;
+}
+
 .site-navigation {
   margin-top: 1rem;
 }
@@ -417,7 +421,6 @@ ul {
 .site-navigation .primary-menu .header-menu li a {
   padding: 0.5rem 1rem;
   color: white;
-  letter-spacing: 0.1rem;
   display: block;
   font-weight: 600;
 }
@@ -457,7 +460,6 @@ ul {
 .footer-menu-nav .footer-menu li a {
   padding: 0.5rem 1rem;
   color: white;
-  letter-spacing: 0.1rem;
   display: block;
   font-weight: 600;
 }
@@ -473,6 +475,44 @@ ul {
 
 .home .site-navigation {
   margin-top: 0;
+}
+
+body #responsive-menu-container {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(108, 176, 171, 0.95)), to(rgba(143, 153, 185, 0.95)));
+  background: linear-gradient(90deg, rgba(108, 176, 171, 0.95), rgba(143, 153, 185, 0.95));
+  border-top-left-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+  position: absolute;
+  bottom: 20vh;
+}
+
+body #responsive-menu-container #responsive-menu-wrapper {
+  margin: 0 3rem;
+  margin-top: 5rem;
+  background: none;
+}
+
+body #responsive-menu-container #responsive-menu-wrapper #responsive-menu li:first-of-type a {
+  border-top: none;
+}
+
+body #responsive-menu-container #responsive-menu-wrapper #responsive-menu li a {
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  padding: 1.5rem 0;
+  height: auto;
+  line-height: unset;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+body #responsive-menu-container #responsive-menu-wrapper #responsive-menu-search-box {
+  padding: 2rem 0;
+}
+
+body #responsive-menu-container #responsive-menu-wrapper #responsive-menu-search-box .responsive-menu-search-box {
+  border-radius: 10px;
+  outline: none;
 }
 
 /* Layout */
