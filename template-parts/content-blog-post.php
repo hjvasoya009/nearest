@@ -7,8 +7,6 @@
         ?>
             <a href="<?php the_permalink(); ?>" class="article-post-thumbnail"><?php the_post_thumbnail(); ?></a>
         <?php
-        } else {
-            the_post_thumbnail();
         }
         ?>
     </div>
@@ -23,16 +21,24 @@
                 </a>
             </h2>
             
-            <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); echo do_shortcode('[addtoany]'); ?>
+            <div class="likeshare-blog">
+                <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); echo do_shortcode('[addtoany]'); ?>
+            </div>
 
         <?php
         } else {
         ?>
-            <?php the_title('<h2 class="article-title">', '</h2>'); ?>
-
+            <?php the_title('<h2 class="single-article-title">', '</h2>'); ?>
+           
+    <!-- <?php  the_post_thumbnail(); ?> -->
             <div class="article-excerpt">
                 <?php the_content(); ?>
             </div>
+
+            <div class="likeshare-single-blog">
+                <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); echo do_shortcode('[addtoany]'); ?>
+            </div>
+
         <?php
         }
         ?>
