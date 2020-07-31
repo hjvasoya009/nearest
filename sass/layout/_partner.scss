@@ -2,6 +2,7 @@
   .content-area {
     padding: 0 1rem;
   }
+
   h1 {
     color: $text_color-heading;
     font-size: 2.5rem;
@@ -13,17 +14,21 @@
     display: grid;
 
     margin: 2rem 0;
+
     .sponsor-meta-text {
       order: 2;
+
       .wp-block-group__inner-container {
         background-color: #d5e9e8;
         padding: 1.5rem 3rem 2rem;
         text-align: center;
-        border-radius: 1.5rem;
+        border-radius: 2rem;
+
         p {
           font-size: 0.9rem;
           line-height: 1.8;
         }
+
         p:first-of-type {
           font-size: 2rem;
           color: #445b7f;
@@ -34,26 +39,35 @@
     }
   }
 
-  img {
-    border-radius: 1.5rem;
+  .partner-with-us {
+    margin-bottom: 5rem;
+
+    img {
+      border-radius: 2rem;
+
+    }
   }
 
   @include mq-small() {
     .content-area {
       padding: 0;
     }
+
     .section-sponsor:first-of-type {
       figure {
         margin-left: 3rem;
+
         img {
           border-top-right-radius: 0;
           border-bottom-right-radius: 0;
         }
       }
     }
+
     .section-sponsor:nth-of-type(2) {
       figure {
         margin-right: 3rem;
+
         img {
           border-top-left-radius: 0;
           border-bottom-left-radius: 0;
@@ -74,9 +88,11 @@
     .wp-block-group__inner-container {
       grid-template-columns: 1fr 1fr;
       grid-gap: 1rem;
+
       .wp-block-group__inner-container {
         display: block;
       }
+
       .sponsor-meta-text {
         .wp-block-group__inner-container {
           margin: 0;
@@ -90,12 +106,15 @@
         margin: 0;
         display: flex;
       }
+
       .wp-block-group__inner-container {
         margin-bottom: 0rem;
+
         .sponsor-meta-text {
           display: flex;
+
           .wp-block-group__inner-container {
-            border-radius: 1.5rem;
+            border-radius: 2rem;
             border-top-left-radius: 0;
             border-bottom-left-radius: 0;
             padding: 3rem;
@@ -109,12 +128,15 @@
         margin: 0;
         display: flex;
       }
+
       .wp-block-group__inner-container {
         margin-top: 1rem;
+
         .sponsor-meta-text {
           display: flex;
+
           .wp-block-group__inner-container {
-            border-radius: 1.5rem;
+            border-radius: 2rem;
             border-top-right-radius: 0;
             border-bottom-right-radius: 0;
             margin: 0;
@@ -125,9 +147,9 @@
     }
   }
 
-  @include mq-exLarge() {
+  @include mq-large() {
     .content-area {
-      max-width: 1500px;
+      max-width: 1200px;
       margin: 0 auto;
     }
   }

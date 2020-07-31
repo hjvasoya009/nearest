@@ -166,6 +166,10 @@
     }
   }
 
+  #main {
+    margin-bottom: 5rem;
+  }
+
   @include mq-medium() {
     #primary {
       margin: 0 auto;
@@ -173,7 +177,7 @@
     }
   }
 
-  @include mq-mediumLarge() {
+  @include mq-large() {
     #primary {
       margin: 0;
       max-width: 100%;
