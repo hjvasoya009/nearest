@@ -7,7 +7,9 @@ get_header();
 <?php
 
 if (have_posts()) :
-
+?>
+<div class="partner-with-us">
+<?php
     while (have_posts()) :
         the_post();
 
@@ -16,7 +18,9 @@ if (have_posts()) :
 
 
     endwhile;
-
+?>
+</div>
+<?php
 else :
     get_template_part('template-parts/content-none.php');
 
