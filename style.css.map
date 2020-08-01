@@ -22,7 +22,8 @@
         "sass/layout/_partner.scss",
         "sass/layout/_contact.scss",
         "sass/layout/_blog.scss",
-        "sass/layout/_single-article.scss"
+        "sass/layout/_single-article.scss",
+        "sass/layout/_error.scss"
     ],
     "names": [],
     "file": "style.css"

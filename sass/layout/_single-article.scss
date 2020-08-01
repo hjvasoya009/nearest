@@ -6,18 +6,53 @@
         font-style: italic;
         font-weight: 400;
         padding: 1rem;
-        font-size: 1.4rem;
-        line-height: 1.6rem;
+        margin: 0;
+        font-size: 1.6rem;
+        line-height: 2rem;
 
         @include mq-small() {
             font-size: 2rem;
+            line-height: 1.6rem;
+        }
+
+        @include mq-medium() {
+            font-size: 2.5rem;
+        }
+
+        @include mq-mediumLarge {
+            font-size: 3rem;
         }
 
         @include mq-large() {
             padding: 3rem 1rem;
-            font-size: 3rem;
+            margin: 0;
+            padding-bottom: 1rem;
         }
     }
+
+    .author-date {
+        padding: 2rem 1rem;
+        font-size: 1rem;
+        font-style: italic;
+        display: flex;
+        justify-content: space-between;
+
+        @include mq-small() {
+            justify-content: unset;
+
+            .article-date {
+                padding-left: 5rem;
+            }
+        }
+
+        @include mq-medium() {
+            padding: 5rem 1rem; 
+        }
+
+        
+    }
+
+    
 
     .single-blog-img-text {
         position: relative;
@@ -25,11 +60,12 @@
     }
 
     .blogtext-overlay {
+
+        display: none;
         position: absolute;
-        bottom: 0;
+        bottom: 40px;
         max-width: 60%;
-        left: 8rem;
-        padding-bottom: 2rem;
+        left: 3rem;
         border-left: 2px solid white;
         padding-left: 2rem;
         color: white;
@@ -37,7 +73,12 @@
         text-shadow: 2px 2px 3px grey;
         letter-spacing: 1px;
 
+        @include mq-small() {
+            display: block;
+        }
+
         @include mq-large() {
+            left: 8rem;
             font-size: 1.5rem;
             line-height: 2rem;
         }
