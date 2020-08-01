@@ -2,6 +2,12 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+
+    li {
+        a {
+            letter-spacing: 1px;
+        }
+    }
 }
 
 .site-navigation {
@@ -18,7 +24,6 @@ ul {
                 a {
                     padding: 0.5rem 1rem;
                     color: $text-color_white;
-                    letter-spacing: 0.1rem;
                     display: block;
                     font-weight: 600;
 
@@ -56,7 +61,6 @@ ul {
             a {
                 padding: 0.5rem 1rem;
                 color: $text-color_white;
-                letter-spacing: 0.1rem;
                 display: block;
                 font-weight: 600;
 
@@ -76,5 +80,48 @@ ul {
 .home {
     .site-navigation {
         margin-top: 0;
+    }
+}
+
+body {
+    #responsive-menu-container {
+        background: linear-gradient(90deg, rgba(108, 176, 171, 0.95), rgba(143, 153, 185, 0.95));
+        border-top-left-radius: 3rem;
+        border-bottom-left-radius: 3rem;
+        bottom: 10vh;
+
+
+        #responsive-menu-wrapper {
+            margin: 4rem 3rem;
+            background: none;
+
+            #responsive-menu {
+                li {
+                    &:first-of-type a {
+                        border-top: none;
+                    }
+
+                    a {
+                        border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
+                        background-color: transparent;
+                        padding: 1.5rem 0;
+                        height: auto;
+                        line-height: unset;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        outline: none;
+                    }
+                }
+            }
+
+            #responsive-menu-search-box {
+                padding: 2rem 0;
+                
+                .responsive-menu-search-box {
+                    border-radius: 10px;
+                    outline: none;
+                }
+            }
+        }
     }
 }

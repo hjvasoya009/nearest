@@ -2,3 +2,19 @@ a {
     text-decoration: none;
     color: black;
 }
+
+.download-link {
+    
+    filter: drop-shadow(0 5px 5px #333);
+
+    img {
+        transition: all 0.5s;
+    }
+
+    &:hover {
+        img {
+            transform: translate(0%, 0%) scale(1.1);
+        }
+        
+    }
+}
