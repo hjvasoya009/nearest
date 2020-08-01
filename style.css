@@ -1468,6 +1468,9 @@ ul {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .page-id-254 .wp-block-group__inner-container .sponsor-meta-text .wp-block-group__inner-container {
@@ -1475,11 +1478,22 @@ ul {
   padding: 1.5rem 3rem 2rem;
   text-align: center;
   border-radius: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .page-id-254 .wp-block-group__inner-container .sponsor-meta-text .wp-block-group__inner-container p {
   font-size: 0.9rem;
   line-height: 1.8;
+  text-align: left;
 }
 
 .page-id-254 .wp-block-group__inner-container .sponsor-meta-text .wp-block-group__inner-container p:first-of-type {
@@ -1621,6 +1635,12 @@ ul {
   margin: 0 auto;
 }
 
+.contact-form #nf-field-4:hover {
+  color: #91eec5;
+  -webkit-box-shadow: 3px 3px 1px 1px lightgray;
+          box-shadow: 3px 3px 1px 1px lightgray;
+}
+
 @media screen and (min-width: 550px) {
   .contact-form #nf-field-4 {
     margin-top: 2rem;
@@ -1710,6 +1730,19 @@ ul {
     max-width: 800px;
     margin: 0 auto;
   }
+}
+
+.nf-response-msg {
+  text-align: center;
+  padding: 3rem 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background-color: #d6eae9;
+  border-radius: 2rem;
+  max-width: 70%;
+  margin: 0 auto;
+  margin-bottom: 5rem;
 }
 
 .blog #primary,
@@ -1852,20 +1885,64 @@ ul {
   font-style: italic;
   font-weight: 400;
   padding: 1rem;
-  font-size: 1.4rem;
-  line-height: 1.6rem;
+  margin: 0;
+  font-size: 1.6rem;
+  line-height: 2rem;
 }
 
 @media screen and (min-width: 550px) {
   .article-content .single-article-title {
     font-size: 2rem;
+    line-height: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .article-content .single-article-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .article-content .single-article-title {
+    font-size: 3rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .article-content .single-article-title {
     padding: 3rem 1rem;
-    font-size: 3rem;
+    margin: 0;
+    padding-bottom: 1rem;
+  }
+}
+
+.article-content .author-date {
+  padding: 2rem 1rem;
+  font-size: 1rem;
+  font-style: italic;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (min-width: 550px) {
+  .article-content .author-date {
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  .article-content .author-date .article-date {
+    padding-left: 5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .article-content .author-date {
+    padding: 5rem 1rem;
   }
 }
 
@@ -1875,11 +1952,11 @@ ul {
 }
 
 .article-content .blogtext-overlay {
+  display: none;
   position: absolute;
-  bottom: 0;
+  bottom: 40px;
   max-width: 60%;
-  left: 8rem;
-  padding-bottom: 2rem;
+  left: 3rem;
   border-left: 2px solid white;
   padding-left: 2rem;
   color: white;
@@ -1888,8 +1965,15 @@ ul {
   letter-spacing: 1px;
 }
 
+@media screen and (min-width: 550px) {
+  .article-content .blogtext-overlay {
+    display: block;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .article-content .blogtext-overlay {
+    left: 8rem;
     font-size: 1.5rem;
     line-height: 2rem;
   }
@@ -1944,7 +2028,7 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 7rem;
+  padding: 7rem 0;
 }
 
 .article-content .likeshare-single-blog .simplefavorite-button {
@@ -1997,5 +2081,100 @@ ul {
 
 .article-content .likeshare-single-blog button.simplefavorite-button, .article-content .likeshare-single-blog .addtoany_shortcode {
   padding: 0 1rem;
+}
+
+.error404 #main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80vh;
+}
+
+.error404 #main .error-404-content {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(83, 98, 147, 0.9)), to(rgba(83, 98, 147, 0.6))), url("img/error-banner.png");
+  background-image: linear-gradient(0deg, rgba(83, 98, 147, 0.9), rgba(83, 98, 147, 0.6)), url("img/error-banner.png");
+  background-size: contain;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 70vh;
+  margin: 5rem 2rem;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 0 2rem;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .error404 #main .error-404-content {
+    border-radius: 3rem;
+    margin: 3rem 2rem;
+  }
+}
+
+.error404 #main .error-404-content .section-inner {
+  margin: 0 auto;
+}
+
+.error404 #main .error-404-content .section-inner h2 {
+  color: white;
+  font-size: 6rem;
+  letter-spacing: 8px;
+  border-bottom: 1px solid white;
+  padding-bottom: 2rem;
+  margin: 0;
+}
+
+@media screen and (min-width: 550px) {
+  .error404 #main .error-404-content .section-inner h2 {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .error404 #main .error-404-content .section-inner h2 {
+    font-size: 8rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .error404 #main .error-404-content .section-inner h2 {
+    font-size: 10rem;
+  }
+}
+
+.error404 #main .error-404-content .section-inner p {
+  padding-top: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .error404 #main .error-404-content .section-inner p {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .error404 #main .error-404-content .section-inner p {
+    font-size: 2.2rem;
+  }
+}
+
+.error404 #main .error-404-content .section-inner a {
+  color: white;
+  font-weight: bold;
+}
+
+.error404 #main .error-404-content .section-inner a:hover {
+  color: #91eec5;
 }
 /*# sourceMappingURL=style.css.map */

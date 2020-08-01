@@ -17,16 +17,21 @@
 
     .sponsor-meta-text {
       order: 2;
+      display: flex;
 
       .wp-block-group__inner-container {
         background-color: #d5e9e8;
         padding: 1.5rem 3rem 2rem;
         text-align: center;
         border-radius: 2rem;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
 
         p {
           font-size: 0.9rem;
           line-height: 1.8;
+          text-align: left;
         }
 
         p:first-of-type {

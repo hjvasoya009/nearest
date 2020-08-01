@@ -1,0 +1,78 @@
+.error404 {
+    #main {
+        display: flex;
+        align-items: center;
+        height: 80vh;
+
+        .error-404-content {
+            // background-image: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.3)), url('img/error-banner.png');
+
+            background-image: linear-gradient(0deg, rgba(83,98,147,0.9), rgba(83,98,147,0.6)), url('img/error-banner.png');
+            background-size: contain;
+            flex: 1;
+            height: 70vh;
+            margin: 5rem 2rem;
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            padding: 0 2rem;
+            color: white;
+           
+
+            @include mq-medium() {
+                border-radius: 3rem;
+                margin: 3rem 2rem;
+            }
+
+            .section-inner {
+                margin: 0 auto;
+
+                h2 {
+                    color: white;
+                    font-size: 6rem;
+                    letter-spacing: 8px;
+                    border-bottom: 1px solid white;
+                    padding-bottom: 2rem;
+                    margin: 0;
+
+                    @include mq-small() {
+                        max-width: 50%;
+                        margin: 0 auto;
+                    }
+
+                    @include mq-medium() {
+                        font-size: 8rem;
+                    }
+
+                    @include mq-large() {
+                        font-size: 10rem;
+                    }
+                }
+
+                p {
+                    padding-top: 1rem;
+
+                    @include mq-medium() {
+                        font-size: 1.5rem;
+                    }
+
+                    @include mq-large() {
+                        font-size: 2.2rem;
+                    }
+                }
+
+                a {
+                    color: white;
+                    font-weight: bold;
+
+                    &:hover {
+                        color: #91eec5;
+                    }
+                }
+            }
+            
+        }
+
+    }
+}
