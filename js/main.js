@@ -45,9 +45,16 @@ $(".team-section").before(leftOutlineHTML);
 
 
 // It's added because Testimonial slider conflicting with team section and adding extra p tag in that.
-// $('.team-section').next('p').remove();
-// $('.team-member').next('p').remove();
 $('p').each(function(){ // For each element
     if( $(this).text().trim() === '' )
         $(this).remove();
 });
+
+// Remove clickable links from testimonial slider
+$(".wppsac-carousel-slides").find("a").contents().unwrap();
+
+// Get Search Parameter and display in serch box.
+var searchParam = new URLSearchParams(window.location.search);
+if (searchParam.get('s') != null) {
+    $('.responsive-menu-search-box').val(searchParam.get('s'));
+}
