@@ -392,6 +392,21 @@ a {
   color: black;
 }
 
+.download-link {
+  -webkit-filter: drop-shadow(0 5px 5px #333);
+          filter: drop-shadow(0 5px 5px #333);
+}
+
+.download-link img {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.download-link:hover img {
+  -webkit-transform: translate(0%, 0%) scale(1.1);
+          transform: translate(0%, 0%) scale(1.1);
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -1001,6 +1016,8 @@ body #responsive-menu-container #responsive-menu-wrapper #responsive-menu-search
   padding-top: 4rem;
   background: rgba(255, 255, 255, 0.8);
   border-radius: 2rem;
+  -webkit-box-shadow: 0px -1px 10px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0px -1px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 .home #primary .section-content .testimonial-slider .wppsac-carousel-slides .wppsac-post-content-position .wppsac-post-title a {
@@ -1088,6 +1105,12 @@ body #responsive-menu-container #responsive-menu-wrapper #responsive-menu-search
   font-style: italic;
   margin: 0;
   color: white;
+}
+
+.home #primary .section-content .team-section .team-members > .wp-block-group__inner-container .team-member img {
+  -webkit-box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
 }
 
 .curl {
