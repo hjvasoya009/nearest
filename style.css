@@ -517,6 +517,7 @@ body #responsive-menu-container #responsive-menu-wrapper #responsive-menu li a {
   line-height: unset;
   text-transform: uppercase;
   font-weight: 600;
+  outline: none;
 }
 
 body #responsive-menu-container #responsive-menu-wrapper #responsive-menu-search-box {
@@ -1020,7 +1021,7 @@ body #responsive-menu-container #responsive-menu-wrapper #responsive-menu-search
           box-shadow: 0px -1px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
-.home #primary .section-content .testimonial-slider .wppsac-carousel-slides .wppsac-post-content-position .wppsac-post-title a {
+.home #primary .section-content .testimonial-slider .wppsac-carousel-slides .wppsac-post-content-position .wppsac-post-title {
   color: #333;
   font-size: 1.3rem;
 }
@@ -1810,6 +1811,7 @@ body #responsive-menu-container #responsive-menu-wrapper #responsive-menu-search
 }
 
 .blog #primary,
+.search #primary,
 .single #primary {
   max-width: 1200px;
   margin: 0 auto;
@@ -1818,18 +1820,21 @@ body #responsive-menu-container #responsive-menu-wrapper #responsive-menu-search
 }
 
 .blog #primary h2.blogpage-pagetitle,
+.search #primary h2.blogpage-pagetitle,
 .single #primary h2.blogpage-pagetitle {
   text-align: center;
   margin: 3rem 0;
 }
 
 .blog #primary .blog-posts,
+.search #primary .blog-posts,
 .single #primary .blog-posts {
   margin: 2rem;
 }
 
 @media screen and (min-width: 768px) {
   .blog #primary .blog-posts,
+  .search #primary .blog-posts,
   .single #primary .blog-posts {
     display: -ms-grid;
     display: grid;
@@ -1841,6 +1846,7 @@ body #responsive-menu-container #responsive-menu-wrapper #responsive-menu-search
 
 @media screen and (min-width: 1200px) {
   .blog #primary .blog-posts,
+  .search #primary .blog-posts,
   .single #primary .blog-posts {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
@@ -1848,6 +1854,7 @@ body #responsive-menu-container #responsive-menu-wrapper #responsive-menu-search
 }
 
 .blog #primary .blog-posts article,
+.search #primary .blog-posts article,
 .single #primary .blog-posts article {
   margin-bottom: 3.5rem;
   border: 1px solid lightgrey;
@@ -1856,18 +1863,21 @@ body #responsive-menu-container #responsive-menu-wrapper #responsive-menu-search
 
 @media screen and (min-width: 768px) {
   .blog #primary .blog-posts article,
+  .search #primary .blog-posts article,
   .single #primary .blog-posts article {
     margin-bottom: 0;
   }
 }
 
 .blog #primary .blog-posts article .article-post-thumbnail img,
+.search #primary .blog-posts article .article-post-thumbnail img,
 .single #primary .blog-posts article .article-post-thumbnail img {
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
 }
 
 .blog #primary .blog-posts article h2.article-title,
+.search #primary .blog-posts article h2.article-title,
 .single #primary .blog-posts article h2.article-title {
   border-bottom: 1px solid lightgrey;
   padding: 1rem;
@@ -1879,6 +1889,7 @@ body #responsive-menu-container #responsive-menu-wrapper #responsive-menu-search
 }
 
 .blog #primary .blog-posts article h2.article-title a,
+.search #primary .blog-posts article h2.article-title a,
 .single #primary .blog-posts article h2.article-title a {
   color: #3a3a3a;
   font-size: 1.2rem;
@@ -1886,6 +1897,7 @@ body #responsive-menu-container #responsive-menu-wrapper #responsive-menu-search
 }
 
 .blog #primary .blog-posts article .simplefavorite-button,
+.search #primary .blog-posts article .simplefavorite-button,
 .single #primary .blog-posts article .simplefavorite-button {
   border: none;
   background-color: rgba(255, 255, 255, 0);
@@ -1893,16 +1905,19 @@ body #responsive-menu-container #responsive-menu-wrapper #responsive-menu-search
 }
 
 .blog #primary .blog-posts article .simplefavorite-button:hover,
+.search #primary .blog-posts article .simplefavorite-button:hover,
 .single #primary .blog-posts article .simplefavorite-button:hover {
   cursor: pointer;
 }
 
 .blog #primary .blog-posts article .simplefavorite-button i,
+.search #primary .blog-posts article .simplefavorite-button i,
 .single #primary .blog-posts article .simplefavorite-button i {
   padding-right: .2rem;
 }
 
 .blog #primary .blog-posts article .addtoany_list a,
+.search #primary .blog-posts article .addtoany_list a,
 .single #primary .blog-posts article .addtoany_list a {
   color: black;
   text-decoration: none;
@@ -1917,6 +1932,7 @@ body #responsive-menu-container #responsive-menu-wrapper #responsive-menu-search
 }
 
 .blog #primary .blog-posts article .addtoany_list a:after,
+.search #primary .blog-posts article .addtoany_list a:after,
 .single #primary .blog-posts article .addtoany_list a:after {
   content: "SHARE";
   font-size: 1rem;
@@ -1924,12 +1940,14 @@ body #responsive-menu-container #responsive-menu-wrapper #responsive-menu-search
 }
 
 .blog #primary .blog-posts article .addtoany_list a img,
+.search #primary .blog-posts article .addtoany_list a img,
 .single #primary .blog-posts article .addtoany_list a img {
   height: 1rem;
   width: auto;
 }
 
 .blog #primary .blog-posts article .likeshare-blog,
+.search #primary .blog-posts article .likeshare-blog,
 .single #primary .blog-posts article .likeshare-blog {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2092,7 +2110,8 @@ body #responsive-menu-container #responsive-menu-wrapper #responsive-menu-search
   padding: 1rem;
 }
 
-.article-content .likeshare-single-blog button.simplefavorite-button, .article-content .likeshare-single-blog .addtoany_shortcode {
+.article-content .likeshare-single-blog button.simplefavorite-button,
+.article-content .likeshare-single-blog .addtoany_shortcode {
   padding: 0 1rem;
 }
 /*# sourceMappingURL=style.css.map */
