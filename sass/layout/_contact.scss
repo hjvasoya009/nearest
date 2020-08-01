@@ -6,21 +6,27 @@
         max-width: 800px;
     }
 
-    #nf-field-1, #nf-field-2, #nf-field-3 {
+    #nf-field-1,
+    #nf-field-2,
+    #nf-field-3 {
         border-radius: .5rem;
         border: 1px solid #67a5a9;
         background-color: $text-color_white;
     }
-    
-    #nf-label-field-1, #nf-label-field-2, #nf-label-field-3 {
+
+    #nf-label-field-1,
+    #nf-label-field-2,
+    #nf-label-field-3 {
         font-family: $font-sans-serif;
         font-weight: normal;
     }
-    
-    .nf-form-title, .nf-form-fields-required, .ninja-forms-req-symbol {
+
+    .nf-form-title,
+    .nf-form-fields-required,
+    .ninja-forms-req-symbol {
         display: none;
     }
-    
+
     #nf-field-4 {
         text-transform: uppercase;
         font-weight: 600;
@@ -30,10 +36,11 @@
         width: 100%;
         height: auto;
         margin: 0 auto;
+        cursor: pointer;
 
         &:hover {
             color: #91eec5;
-            box-shadow: 3px 3px 1px 1px lightgray;
+            box-shadow: 0 5px 10px #333;
         }
 
         @include mq-small {
@@ -41,9 +48,10 @@
         }
 
         @include mq-medium {
-        max-width: 400px;
-        margin: 0 auto;
-        margin-top: 4rem;
+            max-width: 400px;
+            margin: 0 auto;
+            margin-top: 4rem;
+            margin-bottom: 4rem;
         }
     }
 
