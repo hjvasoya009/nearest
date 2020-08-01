@@ -31,6 +31,11 @@
         height: auto;
         margin: 0 auto;
 
+        &:hover {
+            color: #91eec5;
+            box-shadow: 3px 3px 1px 1px lightgray;
+        }
+
         @include mq-small {
             margin-top: 2rem;
         }
@@ -104,4 +109,15 @@
         max-width: 800px;
         margin: 0 auto;
     }
+}
+
+.nf-response-msg {
+    text-align: center;
+    padding: 3rem 0;
+    align-self: center;
+    background-color: #d6eae9;
+    border-radius: 2rem;
+    max-width: 70%;
+    margin: 0 auto;
+    margin-bottom: 5rem;
 }
