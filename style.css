@@ -577,7 +577,7 @@ body #responsive-menu-container #responsive-menu-wrapper #responsive-menu-search
 
 #main {
   margin-bottom: 0;
-  min-height: 70vh;
+  min-height: 80vh;
 }
 
 .home #primary {
@@ -697,6 +697,7 @@ body #responsive-menu-container #responsive-menu-wrapper #responsive-menu-search
 .home #primary .section-content.home-detail .intro-section > .wp-block-group__inner-container .call-to-action p {
   width: 80%;
   margin: 0 auto;
+  text-shadow: 2px 2px 3px #38646f;
 }
 
 .home #primary .section-content.home-detail .intro-section > .wp-block-group__inner-container .call-to-action .download-store {
@@ -1708,18 +1709,24 @@ body #responsive-menu-container #responsive-menu-wrapper #responsive-menu-search
   max-width: 800px;
 }
 
-.contact-form #nf-field-1, .contact-form #nf-field-2, .contact-form #nf-field-3 {
+.contact-form #nf-field-1,
+.contact-form #nf-field-2,
+.contact-form #nf-field-3 {
   border-radius: .5rem;
   border: 1px solid #67a5a9;
   background-color: white;
 }
 
-.contact-form #nf-label-field-1, .contact-form #nf-label-field-2, .contact-form #nf-label-field-3 {
+.contact-form #nf-label-field-1,
+.contact-form #nf-label-field-2,
+.contact-form #nf-label-field-3 {
   font-family: "Open Sans", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-weight: normal;
 }
 
-.contact-form .nf-form-title, .contact-form .nf-form-fields-required, .contact-form .ninja-forms-req-symbol {
+.contact-form .nf-form-title,
+.contact-form .nf-form-fields-required,
+.contact-form .ninja-forms-req-symbol {
   display: none;
 }
 
@@ -1733,12 +1740,13 @@ body #responsive-menu-container #responsive-menu-wrapper #responsive-menu-search
   width: 100%;
   height: auto;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 .contact-form #nf-field-4:hover {
   color: #91eec5;
-  -webkit-box-shadow: 3px 3px 1px 1px lightgray;
-          box-shadow: 3px 3px 1px 1px lightgray;
+  -webkit-box-shadow: 0 5px 10px #333;
+          box-shadow: 0 5px 10px #333;
 }
 
 @media screen and (min-width: 550px) {
@@ -1752,6 +1760,7 @@ body #responsive-menu-container #responsive-menu-wrapper #responsive-menu-search
     max-width: 400px;
     margin: 0 auto;
     margin-top: 4rem;
+    margin-bottom: 4rem;
   }
 }
 
@@ -2010,13 +2019,14 @@ body #responsive-menu-container #responsive-menu-wrapper #responsive-menu-search
 @media screen and (min-width: 550px) {
   .article-content .single-article-title {
     font-size: 2rem;
-    line-height: 1.6rem;
+    line-height: 2.7rem;
   }
 }
 
 @media screen and (min-width: 768px) {
   .article-content .single-article-title {
     font-size: 2.5rem;
+    line-height: 3.2rem;
   }
 }
 
@@ -2145,7 +2155,7 @@ body #responsive-menu-container #responsive-menu-wrapper #responsive-menu-search
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 7rem;
+  padding: 7rem 0;
 }
 
 .article-content .likeshare-single-blog .simplefavorite-button {
