@@ -527,6 +527,7 @@ body #responsive-menu-container #responsive-menu-wrapper #responsive-menu-search
 body #responsive-menu-container #responsive-menu-wrapper #responsive-menu-search-box .responsive-menu-search-box {
   border-radius: 10px;
   outline: none;
+  padding: 0 1rem;
 }
 
 /* Layout */
