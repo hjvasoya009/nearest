@@ -482,13 +482,11 @@ body #responsive-menu-container {
   background: linear-gradient(90deg, rgba(108, 176, 171, 0.95), rgba(143, 153, 185, 0.95));
   border-top-left-radius: 3rem;
   border-bottom-left-radius: 3rem;
-  position: absolute;
-  bottom: 20vh;
+  bottom: 10vh;
 }
 
 body #responsive-menu-container #responsive-menu-wrapper {
-  margin: 0 3rem;
-  margin-top: 5rem;
+  margin: 4rem 3rem;
   background: none;
 }
 
@@ -597,7 +595,7 @@ body #responsive-menu-container #responsive-menu-wrapper #responsive-menu-search
 .home #primary .section-content-wrap .section-content:first-of-type {
   max-width: 1200px;
   margin: 0 auto;
-  margin-bottom: 7rem;
+  margin-bottom: 9rem;
 }
 
 .home #primary .section-content-wrap .section-content:last-of-type {
@@ -605,7 +603,7 @@ body #responsive-menu-container #responsive-menu-wrapper #responsive-menu-search
 }
 
 .home #primary .section-content {
-  margin-bottom: 7rem;
+  margin-bottom: 9rem;
 }
 
 .home #primary .section-content:nth-of-type(2) {
@@ -654,12 +652,17 @@ body #responsive-menu-container #responsive-menu-wrapper #responsive-menu-search
 .home #primary .section-content.home-detail .intro-section > .wp-block-group__inner-container .call-to-action {
   max-width: 300px;
   margin: 0 auto;
-  padding-left: 2rem;
 }
 
 @media screen and (min-width: 550px) {
   .home #primary .section-content.home-detail .intro-section > .wp-block-group__inner-container .call-to-action {
     max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .home #primary .section-content.home-detail .intro-section > .wp-block-group__inner-container .call-to-action {
+    padding-left: 2rem;
   }
 }
 
@@ -680,18 +683,36 @@ body #responsive-menu-container #responsive-menu-wrapper #responsive-menu-search
 }
 
 .home #primary .section-content.home-detail .intro-section > .wp-block-group__inner-container .call-to-action .download-store {
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
   margin-top: 3rem;
   margin-bottom: 4rem;
 }
 
-.home #primary .section-content.home-detail .intro-section > .wp-block-group__inner-container .call-to-action .download-store > .wp-block-group__inner-container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  grid-gap: 1rem;
+@media screen and (min-width: 550px) {
+  .home #primary .section-content.home-detail .intro-section > .wp-block-group__inner-container .call-to-action .download-store {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .home #primary .section-content.home-detail .intro-section > .wp-block-group__inner-container .call-to-action .download-store > .wp-block-group__inner-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+}
+
+.home #primary .section-content.home-detail .intro-section > .wp-block-group__inner-container .call-to-action .download-store > .wp-block-group__inner-container figure:last-of-type {
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 550px) {
+  .home #primary .section-content.home-detail .intro-section > .wp-block-group__inner-container .call-to-action .download-store > .wp-block-group__inner-container figure:last-of-type {
+    margin-top: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -823,6 +844,9 @@ body #responsive-menu-container #responsive-menu-wrapper #responsive-menu-search
 @media screen and (min-width: 1200px) {
   .home #primary .section-content .about-section > .wp-block-group__inner-container .about-content {
     grid-column: span 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -833,6 +857,16 @@ body #responsive-menu-container #responsive-menu-wrapper #responsive-menu-search
 @media screen and (min-width: 1200px) {
   .home #primary .section-content .about-section > .wp-block-group__inner-container .about-content > .wp-block-group__inner-container {
     max-width: 710px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 

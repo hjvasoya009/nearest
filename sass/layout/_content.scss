@@ -40,7 +40,7 @@
                 &:first-of-type {
                     max-width: 1200px;
                     margin: 0 auto;
-                    margin-bottom: 7rem;
+                    margin-bottom: 9rem;
                 }
 
                 &:last-of-type {
@@ -50,7 +50,7 @@
         }
 
         .section-content {
-            margin-bottom: 7rem;
+            margin-bottom: 9rem;
 
             &:nth-of-type(2) {
                 position: relative;
@@ -94,10 +94,13 @@
 
                             max-width: 300px;
                             margin: 0 auto;
-                            padding-left: 2rem;
 
                             @include mq-small {
                                 max-width: 450px;
+                            }
+
+                            @include mq-medium {
+                                padding-left: 2rem;
                             }
 
                             h2 {
@@ -115,15 +118,31 @@
                             }
 
                             .download-store {
-                                width: 80%;
+                                width: 60%;
                                 margin: 0 auto;
                                 margin-top: 3rem;
                                 margin-bottom: 4rem;
 
+                                @include mq-small {
+                                    width: 80%;
+                                }
+
                                 >.wp-block-group__inner-container {
-                                    display: grid;
-                                    grid-template-columns: 1fr 1fr;
-                                    grid-gap: 1rem;
+                                    @include mq-small {
+                                        display: grid;
+                                        grid-template-columns: 1fr 1fr;
+                                        grid-gap: 1rem;
+                                    }
+
+                                    figure {
+                                        &:last-of-type {
+                                            margin-top: 1rem;
+
+                                            @include mq-small {
+                                                margin-top: 0;
+                                            }
+                                        }
+                                    }
                                 }
                             }
 
@@ -240,6 +259,7 @@
 
                         @include mq-large {
                             grid-column: span 2;
+                            display: flex;
                         }
 
                         >.wp-block-group__inner-container {
@@ -247,6 +267,9 @@
 
                             @include mq-large {
                                 max-width: 710px;
+                                display: flex;
+                                flex-flow: column nowrap;
+                                justify-content: center;
                             }
 
                             h2 {
