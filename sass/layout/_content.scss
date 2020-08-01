@@ -106,6 +106,7 @@
                             h2 {
                                 color: $text-color_white;
                                 font-size: 2rem;
+                                text-shadow: 2px 2px 3px #38646f;
 
                                 @include mq-small {
                                     font-size: 3rem;
@@ -414,6 +415,7 @@
                             font-style: italic;
                             letter-spacing: 0.09rem;
                             font-size: 0.9rem;
+                            line-height: 1.3rem;
                         }
                     }
                 }
