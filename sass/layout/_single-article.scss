@@ -95,6 +95,10 @@
         }
     }
 
+    .blogtext-right {
+        display: none;
+    }
+
     @include mq-medium() {
 
         margin: 0 2.5rem;
@@ -106,6 +110,7 @@
                 grid-template-rows: 1fr;
 
                 .blogtext-right {
+                    display: block;
                     grid-row: span 2;
                     border-top: .5px solid #3a3a3a;
                     margin-left: 2.5rem;

@@ -1362,6 +1362,9 @@ body #responsive-menu-container #responsive-menu-wrapper #responsive-menu-search
   color: white;
   background-color: #7cbcb9;
   padding: 1rem;
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   -webkit-clip-path: polygon(100% 5%, 100% 100%, 0 100%, 0 5%, 23% 5%, 31% 0, 39% 5%);
           clip-path: polygon(100% 5%, 100% 100%, 0 100%, 0 5%, 23% 5%, 31% 0, 39% 5%);
 }
@@ -1478,7 +1481,8 @@ body #responsive-menu-container #responsive-menu-wrapper #responsive-menu-search
     -webkit-clip-path: polygon(0 0, 95% 0%, 95% 80%, 100% 72%, 95% 64%, 95% 100%, 0 100%);
             clip-path: polygon(0 0, 95% 0%, 95% 80%, 100% 72%, 95% 64%, 95% 100%, 0 100%);
     margin-right: -1.25rem;
-    padding-right: 2rem;
+    padding-right: 3rem;
+    padding-left: 1.75rem;
   }
   .post-type-archive-team_member .type-team_member:nth-of-type(3) .team-meta-data,
   .post-type-archive-team_member .type-team_member:nth-of-type(4) .team-meta-data,
@@ -1486,7 +1490,8 @@ body #responsive-menu-container #responsive-menu-wrapper #responsive-menu-search
     -webkit-clip-path: polygon(100% 100%, 5% 100%, 5% 80%, 0 72%, 5% 64%, 5% 0, 100% 0%);
             clip-path: polygon(100% 100%, 5% 100%, 5% 80%, 0 72%, 5% 64%, 5% 0, 100% 0%);
     margin-left: -1.25rem;
-    padding-left: 2rem;
+    padding-left: 3rem;
+    padding-right: 1.5rem;
   }
 }
 
@@ -1524,9 +1529,9 @@ body #responsive-menu-container #responsive-menu-wrapper #responsive-menu-search
     -webkit-clip-path: polygon(0 0, 95% 0%, 95% 80%, 100% 72%, 95% 64%, 95% 100%, 0 100%);
             clip-path: polygon(0 0, 95% 0%, 95% 80%, 100% 72%, 95% 64%, 95% 100%, 0 100%);
     margin-right: -1.25rem;
-    padding-right: 2.25rem;
+    padding-right: 2.5rem;
     margin-left: 0;
-    padding-left: 1rem;
+    padding-left: 1.5rem;
   }
   .post-type-archive-team_member .type-team_member:nth-of-type(6) .team-meta-data,
   .post-type-archive-team_member .type-team_member:nth-of-type(2) .team-meta-data {
@@ -1536,9 +1541,9 @@ body #responsive-menu-container #responsive-menu-wrapper #responsive-menu-search
     -webkit-clip-path: polygon(100% 100%, 5% 100%, 5% 80%, 0 72%, 5% 64%, 5% 0, 100% 0%);
             clip-path: polygon(100% 100%, 5% 100%, 5% 80%, 0 72%, 5% 64%, 5% 0, 100% 0%);
     margin-left: -1.25rem;
-    padding-left: 2.25rem;
+    padding-left: 3rem;
     margin-right: 0;
-    padding-right: 1rem;
+    padding-right: 1.5rem;
   }
 }
 
@@ -2125,6 +2130,10 @@ body #responsive-menu-container #responsive-menu-wrapper #responsive-menu-search
   }
 }
 
+.article-content .blogtext-right {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .article-content {
     margin: 0 2.5rem;
@@ -2138,6 +2147,7 @@ body #responsive-menu-container #responsive-menu-wrapper #responsive-menu-search
         grid-template-rows: 1fr;
   }
   .article-content .blogtext-para-group .wp-block-group__inner-container .blogtext-right {
+    display: block;
     grid-row: span 2;
     border-top: .5px solid #3a3a3a;
     margin-left: 2.5rem;
